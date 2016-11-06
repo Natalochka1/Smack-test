@@ -1,5 +1,6 @@
 $color-brand: #ffe600;
-$color-dark: #131316;
+$color-dark: rgba(19,19,22,0.9);
+$color-darkest: #131316;
 
 
 $line-height-base: 1.56;
@@ -7,6 +8,7 @@ $font-family-base: 'Oswald', Arial, sans-serif;
 $p-margin-bottom: 50px;
 
 $link-color: #000;
+$link-color-hover: $color-brand;
 
 
 
