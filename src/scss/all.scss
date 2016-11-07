@@ -10,6 +10,9 @@
 @import 'components/blocks.scss';
 @import 'components/features.scss';
 
+.container {
+	min-width: 400px;
+}
 .block-inverse {
 	background-color: $color-dark;
 }
@@ -62,6 +65,7 @@ textarea.form-control {
 	}
 }
 .ul-menu {
+	float: right;
 	padding: 40px;
 	li {
 		position: relative;
@@ -115,6 +119,58 @@ p.quote-signature {
 }
 .block-fill-height {
 	padding: 0px;
+}
+.mobile, .mobile-close {
+	display: none;
+}
+@media all and (max-width: 768px) {
+	.block {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	input {
+		margin-bottom: $form-margin-bottom;
+	}
+	.mobile {
+		display: block;
+		margin: 10px;
+		width: 50px;
+		height: 50px;
+		float: right;
+		cursor: pointer;
+		span {
+			height: 8px;
+			width: 50px;
+			margin-bottom: 8px;
+			display: inline-block;
+			background-color: #fff;
+		}
+	}
+	
+
+	.ul-menu {
+		float: none;
+		height: 100vh;
+	}
+	.collapse {
+		display: none;
+		width: 100%;
+		.ul-menu {
+			clear: both;
+			display: block;
+			li {
+				display: block;
+				text-align: center;
+				&:after {
+					display: none;
+				}
+				a {
+					font-size: 50px;
+					line-height: 2.5em;
+				}
+			}
+		}
+	}
 }
 
 //sliders
