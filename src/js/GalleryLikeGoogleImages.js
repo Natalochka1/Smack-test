@@ -323,12 +323,20 @@ var Grid = (function() {
 		preview = $.data( this, 'preview', new Preview( $item ) );
 		// expand preview overlay
 		preview.open();
-		for (var i = 0; i < $('.preview-item').length; i++) {
-				if($('.preview-item').eq(i).html() !== ""){
-					$('.preview-item').eq(i).css('height', '500px'); 
+		if(winsize.width > 751){
+			for (var i = 0; i < $('.preview-item').length; i++) {
+					if($('.preview-item').eq(i).html() !== ""){
+						$('.preview-item').eq(i).css('height', '500px'); 
+					}
 				}
 			}
-
+			else {
+				for (var i = 0; i < $('.preview-item').length; i++) {
+					if($('.preview-item').eq(i).html() !== ""){
+						$('.preview-item').eq(i).css('height', '100vh'); 
+					}
+				}
+		}
 	}
 
 	function hidePreview() {
@@ -490,7 +498,30 @@ var Grid = (function() {
 				};
 
 			this.calcHeight();
-			this.$previewEl.css( 'height', '450px'  );
+
+			
+			if(winsize.width > 751){
+			for (var i = 0; i < $('.preview-item').length; i++) {
+					if($('.preview-item').eq(i).html() !== ""){
+						this.$previewEl.css( 'height', "500px");; 
+					}
+				}
+				
+			}
+			else {
+				for (var i = 0; i < $('.preview-item').length; i++) {
+					if($('.preview-item').eq(i).html() !== ""){
+						this.$previewEl.css('height', '100vh'); 
+					}
+				}
+			}
+			
+				
+			
+
+			// this.$previewEl.css( 'height', $(".preview-item").height());
+				
+
 			this.$item.css( 'height', 0 ).on( transEndEventName, onEndFn );
 
 			if( !support ) {
@@ -506,7 +537,8 @@ var Grid = (function() {
 			// case 3 : preview height + item height does not fit in window´s height and preview height is bigger than window´s height
 			var position = this.$item.data( 'offsetTop' ),
 				previewOffsetT = this.$previewEl.offset().top - scrollExtra,
-				scrollVal = this.height + this.$item.data( 'height' ) <= winsize.height ? position - 200 : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
+				scrollVal = this.height + this.$item.data( 'height' ) <= winsize.height ? position - 250 : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
+	
 			
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
 

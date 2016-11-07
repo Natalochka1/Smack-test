@@ -629,6 +629,95 @@ h6, .h6 {
   margin-left: 15px;
 }
 
+.feature {
+  padding: 20px 0;
+}
+
+.feature-bg {
+  width: 80px;
+  height: 80px;
+  line-height: 97px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffce00;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+.feature-bg:hover {
+  background-color: transparent;
+  border: 1px solid rgba(19, 19, 22, 0.9);
+}
+
+.feature-box {
+  width: 70px;
+  height: 70px;
+  line-height: 90px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffce00;
+  opacity: 0.7;
+  float: left;
+  margin-right: 30px;
+}
+
+.feature-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.feature-title {
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.feature-description {
+  text-align: center;
+  font-size: 16px;
+  color: #707070;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.feature-subtitle {
+  color: #515151;
+}
+
+.feature-text {
+  text-align: left;
+  font-size: 16px;
+  padding: 20px 0 30px 100px;
+  color: #707070;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.white {
+  color: #fff;
+}
+
+.left {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.icon-icon1,
+.icon-icon2,
+.icon-icon3,
+.icon-icon4 {
+  font-size: 33px;
+  color: #fff;
+}
+
+.icon-icon1:hover,
+.icon-icon2:hover,
+.icon-icon3:hover,
+.icon-icon4:hover {
+  color: #ffce00;
+}
+
 .block-inverse {
   background-color: rgba(19, 19, 22, 0.9);
 }
@@ -770,6 +859,176 @@ p.quote-signature {
 
 .owl-dots .owl-dot.active {
   background: #ffe600;
+}
+
+.progressbars-wrapper {
+  max-width: 1174px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progressbars-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progressbars-wrapper ul li {
+  display: inline-block;
+  width: 24.7%;
+  text-align: center;
+  font-size: 35px;
+  color: #ffe600;
+  font-weight: 300;
+}
+
+.progressbars-wrapper ul li span {
+  padding: 45px 0 0 50px;
+  display: block;
+}
+
+.progressbars-wrapper .number-block {
+  padding: 30px;
+  border: 1px solid #ffcf00;
+  width: 270px;
+  margin: 0 15px;
+}
+
+.progressbars-wrapper .number-block span {
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.progressbars-wrapper .number-block .highlight {
+  font-size: 16px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.tab-list .ui-tabs-nav {
+  list-style: none;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0;
+}
+
+.tab-list {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.tab-list ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.tab-list ul li {
+  width: 270px;
+  float: left;
+  margin: 0 10px;
+}
+
+.tab-list ul li img {
+  min-width: 1%;
+  max-width: 100%;
+  width: 270px;
+  height: 250px;
+}
+
+.tab-list ul li a {
+  display: block;
+  outline: none;
+}
+
+.tab-list ul li a:hover {
+  color: inherit;
+}
+
+.tab-title {
+  background-color: #fff;
+  border-bottom: 60px solid #fbfbfb;
+  position: relative;
+}
+
+.tab-title span {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.tab-title .prof {
+  font-size: 16px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #dfe4e5;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+  padding-top: 60px;
+  transition: 1s;
+}
+
+#tabs-1 p, #tabs-2 p, #tabs-3 p, #tabs-4 p {
+  text-align: left;
+  font-weight: 300;
+}
+
+#tabs-1 .name, #tabs-2 .name, #tabs-3 .name, #tabs-4 .name {
+  color: #ffe600;
+  margin-bottom: 20px;
+}
+
+.ui-tabs-panel {
+  opacity: 1;
+}
+
+.close-button {
+  float: right;
+  width: 15px;
+  height: 15px;
+  background: url(../images/close.png) no-repeat 0 0;
+}
+
+.ui-tabs {
+  transition: 1s;
+}
+
+.social a {
+  text-align: center;
+  width: 37px;
+  height: 37px;
+  border: 1px solid #fff;
+  display: block;
+  padding-top: 10px;
+  float: left;
+  margin-right: 24px;
+  padding-top: 4px;
+  vertical-align: middle;
+}
+
+.social a .fa {
+  display: inline-block;
+  color: #fff;
+}
+
+.social a .fa:hover {
+  color: #ffe600;
+}
+
+.ui-tabs-active .tab-title:after, .ui.state.active .tab-title:after {
+  position: absolute;
+  content: '';
+  width: 58px;
+  height: 20px;
+  top: calc(100% + 41px);
+  left: calc(50% - 29px);
+  background: #fff url(../images/arrow.png) no-repeat 100% 50%;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,74 @@
+.feature{
+	padding: 20px 0;
+	&-bg{
+		width: 80px;
+		height: 80px;
+		line-height: 97px;
+		text-align: center;
+		border-radius: 50%;
+		background-color: $brand-color;
+		opacity: 0.7;
+		margin: 0 auto;
+		&:hover{
+			background-color: transparent;
+			border: 1px solid $color-dark;
+		}
+	}
+	&-box{
+		width: 70px;
+		height: 70px;
+		line-height: 90px;
+		text-align: center;
+		border-radius: 50%;
+		background-color: $brand-color;
+		opacity: 0.7;
+		float: left;
+		margin-right: 30px;
+	}
+	&-img{
+		margin: 0 auto;
+		display: block;
+	}
+	&-title{
+		padding: 20px 0;
+		font-size: 20px;
+		text-align: center;
+		font-weight: $font-weight-bold;
+	}
+	&-description{
+		text-align: center;
+		font-size: 16px;
+		color: $color-description;
+		line-height: $line-height-description;
+        font-weight: $font-weight-thin;
+	}
+	&-subtitle{
+		color: $color-subtitle;
+	}
+	&-text{
+		text-align: left;
+		font-size: 16px;
+		padding: 20px 0 30px 100px;
+		color: $color-description;
+		line-height: $line-height-description;
+        font-weight: $font-weight-thin;
+	}
+}
+.white{
+	color: $white;
+}
+.left{
+	text-align: left;
+	margin-left: 40px;
+}
+
+.icon-icon1,
+.icon-icon2,
+.icon-icon3,
+.icon-icon4{
+  font-size: 33px;
+  color: $white;
+  &:hover{
+  	color: $brand-color;
+  }
+}

@@ -19,6 +19,7 @@ $(document).ready(function(){
     	items: 6,
     	margin: 50,
     	nav: true,
+    	dots: false,
     	navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
     	// dots: true,
         loop: true,
@@ -45,4 +46,6 @@ $(document).ready(function(){
     	dots: true,
         loop: true,
     });
+
+
 });
