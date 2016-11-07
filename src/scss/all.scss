@@ -13,6 +13,9 @@
 .block-inverse {
 	background-color: $color-dark;
 }
+.block-light {
+	background-color: $color-light;
+}
 p, .h1, .h2, .h3 {
 	@extend .text-center;
 }
@@ -40,6 +43,12 @@ p, .h1, .h2, .h3 {
 	padding: 25px;
 	font-size: 3em;
 	line-height: 0em;
+}
+.form-control {
+	font-weight: 300;
+}
+textarea.form-control {
+	height: 222px;
 }
 .block-header, .footer {
 	background-color: $color-darkest;
