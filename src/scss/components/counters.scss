@@ -1,0 +1,41 @@
+.progressbars-wrapper {
+	max-width: 1174px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.progressbars-wrapper ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+.progressbars-wrapper ul li{
+	display: inline-block;
+	// width: 24.7%;
+	text-align: center;
+	font-size: 35px;
+	color: #ffe600;
+	font-weight: 300;
+}
+.progressbars-wrapper ul li span{
+	    padding: 45px 0 0 50px;
+	display: block;
+}
+
+.progressbars-wrapper .number-block{
+	padding: 30px;
+	border:1px solid #ffcf00;
+	// width: 270px;
+	margin: 0 15px;
+
+}
+.progressbars-wrapper .number-block span{
+	padding:0;
+	color:#fff;
+	font-weight: 700;
+}
+.progressbars-wrapper .number-block .highlight{
+	font-size: 16px;
+	font-weight: 400;
+	color:inherit
+}

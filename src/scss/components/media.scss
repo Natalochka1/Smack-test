@@ -1,0 +1,74 @@
+@media all and (max-width: 768px) {
+	.container {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	input {
+		margin-bottom: $form-margin-bottom;
+	}
+	.mobile {
+		display: block;
+		margin: 10px;
+		width: 50px;
+		height: 50px;
+		float: right;
+		cursor: pointer;
+		span {
+			height: 8px;
+			width: 50px;
+			margin-bottom: 8px;
+			display: inline-block;
+			background-color: #fff;
+		}
+	}
+	.mobile-close {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+		&:before, &:after {
+			content: "";
+			display: inline-block;
+			width: 50px;
+			height: 8px;
+			position: absolute;
+			top: 30px;
+			transform: rotate(45deg);
+			background: #fff;
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+	
+
+	.ul-menu {
+		float: none;
+		height: 100vh;
+		width: 100%;
+	}
+	.collapse {
+		display: none;
+		width: 100%;
+		.ul-menu {
+			clear: both;
+			display: block;
+			li {
+				display: block;
+				text-align: center;
+				&:after {
+					display: none;
+				}
+				a {
+					font-size: 50px;
+					line-height: 2.5em;
+				}
+			}
+		}
+	}
+	.progressbars-wrapper ul li{
+		margin-bottom: 30px;
+	}
+
+}
