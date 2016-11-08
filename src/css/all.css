@@ -850,8 +850,14 @@ p.quote-signature {
   display: none;
 }
 
+@media all and (max-width: 968px) {
+  .tab-list ul li img {
+    height: 500px;
+  }
+}
+
 @media all and (max-width: 768px) {
-  .block {
+  .container {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -872,6 +878,30 @@ p.quote-signature {
     margin-bottom: 8px;
     display: inline-block;
     background-color: #fff;
+  }
+  .mobile-close {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .mobile-close:before, .mobile-close:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    top: 30px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #fff;
+  }
+  .mobile-close:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .ul-menu {
     float: none;
@@ -895,6 +925,18 @@ p.quote-signature {
   .collapse .ul-menu li a {
     font-size: 50px;
     line-height: 2.5em;
+  }
+  .progressbars-wrapper ul li {
+    margin-bottom: 30px;
+  }
+  .tab-list ul li img {
+    height: 1200px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .tab-list ul li img {
+    height: 800px;
   }
 }
 
@@ -944,7 +986,6 @@ p.quote-signature {
 
 .progressbars-wrapper ul li {
   display: inline-block;
-  width: 24.7%;
   text-align: center;
   font-size: 35px;
   color: #ffe600;
@@ -959,7 +1000,6 @@ p.quote-signature {
 .progressbars-wrapper .number-block {
   padding: 30px;
   border: 1px solid #ffcf00;
-  width: 270px;
   margin: 0 15px;
 }
 
@@ -994,17 +1034,10 @@ p.quote-signature {
   content: '';
 }
 
-.tab-list ul li {
-  width: 270px;
-  float: left;
-  margin: 0 10px;
-}
-
 .tab-list ul li img {
   min-width: 1%;
   max-width: 100%;
-  width: 270px;
-  height: 250px;
+  height: auto;
 }
 
 .tab-list ul li a {
