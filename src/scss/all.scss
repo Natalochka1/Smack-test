@@ -74,16 +74,20 @@ textarea.form-control {
 	li {
 		position: relative;
 		margin-left: 30px;
+		
 	}
+	.active > a {
+			color: $color-brand;
+		}
 	li:after {
 		content:'';
 		display: inline-block;
 		width: 5px;
 		height: 5px;
 		background-color: $color-brand;
-		margin: 0 15px;
 		position: absolute;
-		top: 35%;
+		top: 40%;
+		right: -18px;
 	}
 	li:last-child:after {
 		display: none;
@@ -123,6 +127,13 @@ p.quote-signature {
 }
 .block-fill-height {
 	padding: 0px;
+}
+.gallery-links {
+	.ul-menu {
+		display: block;
+		float: none;
+		text-align: center;
+	}
 }
 // .mobile, .mobile-close {
 // 	display: none;

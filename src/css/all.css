@@ -1060,15 +1060,19 @@ textarea.form-control {
   margin-left: 30px;
 }
 
+.ul-menu .active > a {
+  color: #ffe600;
+}
+
 .ul-menu li:after {
   content: '';
   display: inline-block;
   width: 5px;
   height: 5px;
   background-color: #ffe600;
-  margin: 0 15px;
   position: absolute;
-  top: 35%;
+  top: 40%;
+  right: -18px;
 }
 
 .ul-menu li:last-child:after {
@@ -1113,6 +1117,12 @@ p.quote-signature {
 
 .block-fill-height {
   padding: 0px;
+}
+
+.gallery-links .ul-menu {
+  display: block;
+  float: none;
+  text-align: center;
 }
 
 /*# sourceMappingURL=all.css.map */

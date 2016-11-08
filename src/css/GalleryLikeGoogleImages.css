@@ -15,6 +15,35 @@
 	vertical-align: top;
 	/*height: 250px;*/
 	width: 16.6%;	
+	position: relative;
+	cursor: pointer;
+}
+/*.og-grid li:hover > .hover-text {
+	display: block;
+	
+}*/
+.hover-text {
+	display: none;
+	text-align: center;
+	padding-top: 50px;
+	color: #fff;
+	position: absolute;
+	z-index: 50;
+	background: rgba(255,230,0,0.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.hover-text .large {
+	font-size: 20px;
+	font-weight: bold;
+}
+.hover-text p {
+	margin: 0;
+}
+.hover-text .small {
+	font-size: 16px;
 }
 /*@media all (max-width: 1900px){
 	.og-grid {

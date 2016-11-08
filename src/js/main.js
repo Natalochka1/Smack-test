@@ -134,3 +134,9 @@ $( ".mobile-close" ).click(function() {
 		$( ".mobile" ).show();
 	});
 });
+
+$(document).ready(function(){
+	 $( ".og-grid li a img" ).hover(function(){
+	 	$( ".og-grid li" ).parent(".hover-text").show();
+	 }); 
+	});
